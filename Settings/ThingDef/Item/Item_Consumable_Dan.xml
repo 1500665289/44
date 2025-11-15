@@ -1,0 +1,130 @@
+﻿<ThingDefs><List>
+	<ThingDef Type="Item" Name="DanBase" Parent="DrugBase">
+		<MaxStack>100</MaxStack>
+		<TexPath>res\Sprs\object\object_DAdanyao01</TexPath>
+		<Desc>Desc.</Desc>	
+		<MaxHitPoints>100</MaxHitPoints>
+		<Rate>6</Rate>
+		<Beauty>8</Beauty>
+		<Item Lable="Dan">
+			<FabaoSuffix>珠,丸,球</FabaoSuffix>
+		</Item>
+		<Ling>
+			<AddionLing>0</AddionLing>
+			<AddionRadius>2</AddionRadius>
+			<AddionFailing>1</AddionFailing>
+			<AddionFailRadius>1</AddionFailRadius>
+			
+			<Attenuation>0</Attenuation>
+			<Absorption>0</Absorption>
+			<Accommodate>0</Accommodate>
+		</Ling>
+		<Element>
+			<Kind>Mu</Kind>
+			<Value>5</Value>         
+			<Radius>2</Radius>
+			<Failing>0.8</Failing>
+			<FailRadius>1</FailRadius>
+		</Element>
+		<Light>
+			<Value>15</Value>
+			<Failing>0.8</Failing>
+			<FailRadius>1</FailRadius>
+			<Radius>1</Radius>
+			<Color>62F8FFFF</Color>
+		</Light>	
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_Dan_CWGod" Parent="DanBase">
+		<ThingName>大道至简丹</ThingName>
+		<TexPath>Spr\Dan_DaDao.png</TexPath>
+		<Desc>形而上者谓之道，从大道之中自然衍化而成的丹药，蕴含大道本身的一切微妙，服用后可以获得巨额参悟值</Desc>	
+		<Rate>12</Rate>
+		<Beauty>25</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<Ling>100</Ling>
+				<TreeExp>30000000</TreeExp>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>200</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStone" count = "1"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>1</Value>   
+		</Element>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_Dan_FSGod" Parent="DanBase">
+		<ThingName>尘心浩劫丹</ThingName>
+		<TexPath>Spr\Dan_ChenXin.png</TexPath>
+		<Desc>从天劫本源中提炼出来的丹药，蕴含八八六十四次天劫的分神之力，服用后可以一次性获得六十四条分神</Desc>	
+		<Rate>12</Rate>
+		<Beauty>25</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<Ling>100</Ling>
+				<GodSoulCount>64</GodSoulCount>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>200</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStone" count = "1"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>1</Value>   
+		</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_Dan_YQGod" Parent="DanBase">
+		<ThingName>极御炼神丹</ThingName>
+		<TexPath>Spr\Dan_LianShen.png</TexPath>
+		<Desc>形而下者谓之器，凝结了最深层御器感悟的丹药，食用后可以凝炼神魂，额外驾驭一件法宝！可以多次服用</Desc>	
+		<Rate>12</Rate>
+		<Beauty>25</Beauty>
+		<ElementKind>None</ElementKind>
+		<Item Lable="Dan">
+			<PhysicalLables>
+				<li>Smooth1</li>
+				<li>Hard1</li>
+				<li>Light1</li>
+			</PhysicalLables>
+			<Elixir>
+				<Ling>100</Ling>
+				<Modifier>Modifier_Item_Dan_FabaoNumAdd</Modifier>
+			</Elixir>
+			<BeMade>
+				<WorkToMake>200</WorkToMake>
+				<CostItems>
+					<Item name = "Item_LingStone" count = "1"/>
+				</CostItems>
+			</BeMade> 
+		</Item>
+		<Element>
+			<Kind>None</Kind>
+			<Value>1</Value>   
+		</Element>
+	</ThingDef>
+
+	
+</List></ThingDefs>
